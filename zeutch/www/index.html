@@ -24,19 +24,65 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/plugins/shutter.css" />
+        <link rel="stylesheet" type="text/css" href="css/wp_ui.css" />
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Hello World</title>
     </head>
     <body>
+        <div class="lock"></div>
         <div class="app">
-            <h1>Apache Cordova</h1>
+            <div class="navBar">navbar</div>
+            <div class="pages">
+                <div class="pull_down"></div>
+                <div class="wrapper">
+                    <div class="scroller">
+                        <div class="item">
+                            <div class="img"></div>
+                            <div class="label">mon article label</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull_up"></div>
+            </div>
+            <!--<h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
+            </div>-->
+        </div>
+        <div class="shutterNavigation">
+            <div class="shutterScroller">
+                <div class="line animated" data-page="dashboard" data-transition="instant">
+                    <div class="icon">2</div>
+                    <span class="text txtdyn" data-text="DASHBOARD_TITLE"></span>
+                </div>
+                <div class="line animated" data-page="dashboard" data-transition="instant">
+                    <div class="icon">2</div>
+                    <span class="text txtdyn" data-text="DASHBOARD_TITLE"></span>
+                </div>
             </div>
         </div>
+        <!-- IMPORTS JS -->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/zepto.min.js"></script>
+        <script type="text/javascript" src="js/plugins/hammer.min.js"></script>
+        <!--backbones utilities-->
+        <script type="text/javascript" src="js/plugins/backbones/json2.js"></script>
+        <script type="text/javascript" src="js/plugins/backbones/underscore.js"></script>
+        <script type="text/javascript" src="js/plugins/backbones/backbone.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/tweener/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/plugins/tweener/TweenLite.min.js"></script>
+        
+        <script type="text/javascript" src="js/crypto.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/shutter.js"></script>
+        <script type="text/javascript" src="js/utilities.js"></script>
+        <script type="text/javascript" src="js/services.js"></script>
+        
         <script type="text/javascript">
             app.initialize();
         </script>

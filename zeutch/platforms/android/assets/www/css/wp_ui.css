@@ -1,0 +1,41 @@
+.list{
+    width:100%;
+}
+.item{
+    height:120px;
+    width:100%;
+    display:table;
+    float:left;
+    border-bottom:1px solid #E3E3E3;
+    background-color: #FFF;
+}
+.item .img{
+    height:120px;
+    width:35%;
+    background-size: cover;
+    background-position: center center;
+    float:left;
+    background-color:#E3E3E3;
+    margin-bottom:1px;
+}
+.item .label{
+    font-size: 14px;
+    color:#000;
+    text-align: left;
+    padding-left:5%;
+    width:60%;
+    float:left;
+    line-height: 120px;
+}
+.navBar{
+    position:relative;
+    height:10%;
+    background-color:#000;
+}
+.wrapper{
+    display:table;
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}

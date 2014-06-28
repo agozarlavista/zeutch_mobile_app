@@ -17,6 +17,8 @@
  * under the License.
  */
 var app = {
+    shutter:null,
+    services:null,
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -34,6 +36,9 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        //app.services = new service();
+        app.shutter = new shutter();
+        app.shutter.init();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
